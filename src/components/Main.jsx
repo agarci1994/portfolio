@@ -282,7 +282,6 @@ const Main = () => (
                   }
                 >
                   <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} />
-                  <Tween from={{ opacity: 1 }} to={{ opacity: 0 }} />
                 </Timeline>
               </Timeline>
             </Timeline>
@@ -290,7 +289,12 @@ const Main = () => (
         )}
       </Scene>
     </Controller>
-    <div className="section-footer">
+    <Controller>
+      <Scene triggerHook="onLeave" duration={10000} pin>
+        {progress => (
+          <div className="section-footer">
+            <Timeline totalProgress={progress} paused>
+              <Tween from={{ opacity: 0 }} to={{ opacity: 1 }}></Tween>
       <h3>Contacto:</h3>
       <p>alejandro.garci.rodr@gmail.com</p>
       <p>Calle Mohernando, 6, 28038 Madrid, España</p>
@@ -298,7 +302,11 @@ const Main = () => (
       <p>https://github.com/agarci1994</p>
       <p>https://www.linkedin.com/in/alexgarciarodriguez/</p>
       <p>https://www.codewars.com/users/agarci1994</p>
-    </div>
+            </Timeline>
+          </div>
+        )}
+      </Scene>
+    </Controller>
   </StyleMain>
 );
 

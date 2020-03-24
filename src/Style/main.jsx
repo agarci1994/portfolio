@@ -89,7 +89,6 @@ const StyleMain = styled.div`
 
 }
   h4{
-    margin: 10px;
     font-weight: 300
 
   }
