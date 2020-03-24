@@ -1,4 +1,14 @@
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
+
+
+const loop = keyframes`
+   from {
+   opacity: 0
+  }
+  to {
+ opacity: 1
+  }
+`
 
 const StyleMain = styled.div`
   overflow: hidden;
@@ -22,13 +32,20 @@ const StyleMain = styled.div`
          width: 30%;
          border-radius: 50%;
          -webkit-box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
--moz-box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
-box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
+         -moz-box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
+         box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
      }
-   .cursor {
+     .about{
+       margin-top: 100px;
+       font-size: .8em;
+     }
+
+  .cursor {
+    font-weight: 900
     position: absolute;
-    animation: cursorAnimation .5s forwards infinite;
+    animation: ${loop} .8s forwards infinite;
 }
+
   }
   .section-footer {
     height: 70vh;
