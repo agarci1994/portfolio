@@ -1,5 +1,4 @@
-import styled, {keyframes} from "styled-components"
-
+import styled, { keyframes } from "styled-components";
 
 const loop = keyframes`
    from {
@@ -8,7 +7,7 @@ const loop = keyframes`
   to {
  opacity: 1
   }
-`
+`;
 
 const StyleMain = styled.div`
   overflow: hidden;
@@ -66,23 +65,34 @@ const StyleMain = styled.div`
     background: linear-gradient(1600deg,#676767 0%,#232323 100%)
   }
   
-  .sticky, .sticky2 {
+  .section-main{
     height: 100vh;
     background: linear-gradient(130deg, #c5c5c5 0%,#989898 50%, #676767 100%);
     width: 100%;
-
-    & .animation, .animation2 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-
-      & svg {
-        opacity: 1;
-        position: absolute;
-        width: 300px;
-        height: 300px;
-      }
+  
+    .main{
+      margin-top: 100px;
+      h1{font-weight: 200}
     }
+    
+    .proyect{
+      margin: 100px;
+      display: flex;
+      justify-content: space-around
+    }
+    img{
+    width: 90%;
+  }
+  article{
+    width: 30%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    p {font-size: 2em;
+    font-weight: 300}
+  }
+  
 
     .heading {
       position: absolute;
@@ -101,4 +111,4 @@ const StyleMain = styled.div`
   }
 `;
 
-export default StyleMain
+export default StyleMain;
