@@ -22,12 +22,17 @@ const StyleMain = styled.div`
          font-size: 5em;
          font-weight: 200
      }
+     h2{
+       margin-top: 100px;
+         margin-bottom: 60px;
+         font-weight: 300
+       }
      p{
          font-weight: 140;
          font-size: 2.3em;
          line-height: .2em;
      }
-     img{
+     .profile img{
          margin-top: 50px;
          width: 30%;
          border-radius: 50%;
@@ -39,6 +44,15 @@ const StyleMain = styled.div`
        margin-top: 100px;
        font-size: .8em;
      }
+     .study {
+       display: flex;
+       article{
+         width: 50%;
+       }
+      img{
+       width: 30%
+     }}
+    
 
   .cursor {
     font-weight: 900
@@ -48,7 +62,7 @@ const StyleMain = styled.div`
 
   }
   .section-footer {
-    height: 70vh;
+    height: 100vh;
     background: linear-gradient(1600deg,#676767 0%,#232323 100%)
   }
   

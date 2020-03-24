@@ -2,7 +2,7 @@ import React from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 
-import StyleMain from "./Style/main";
+import StyleMain from "../Style/main";
 
 const Main = () => (
   <StyleMain>
@@ -12,7 +12,7 @@ const Main = () => (
           <div className="section-header">
             <Timeline totalProgress={progress} paused>
               <Tween from={{ opacity: 0 }} to={{ opacity: 1 }}>
-                <h1>¡Bienvenido!</h1>
+          <h1>¡Bienvenido!</h1>
               </Tween>
               <Timeline
                 target={
@@ -25,9 +25,11 @@ const Main = () => (
                 }
               >
                 <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} />
+              </Timeline>
+
                 <Timeline
                   target={
-                    <div>
+                    <div className="profile">
                       <img src="../images/photo.png" alt="I" />
                     </div>
                   }
@@ -59,6 +61,7 @@ const Main = () => (
                         al mismo tiempo que participo como periodista en
                         diferentes festivales de cine.
                       </p>
+                      <br></br>
                       <p>
                         En 2020 decido dar un cambio, sumergiendome
                         profesionalmente en el desarrollo web, que me abre un
@@ -72,10 +75,36 @@ const Main = () => (
                   }
                 >
                   <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} />
+                  <Tween from={{ opacity: 1 }} to={{ opacity: 0, display: "none" }} />
+                </Timeline>
+                <Timeline
+                  target={
+                    <div>
+                    <h2>Estudie:</h2>
+                      <section className="study">
+                        <article>
+                          <img src="../images/UCM.png"/>
+                          <p>Universidad Complutense de Madrid</p>
+                          <p>Grado en comunicación audiovisual</p>
+                        </article>
+                        <article>
+                          <img src="../images/lav.png" />
+                          <p>MasterLAV</p>
+                          <p>Master en arte contemporaneo</p>
+                        </article>
+                        <article>
+                          <img src="../images/ironhack.png" />
+                          <p>Ironhack</p>
+                          <p>Bootcamp Desarrollo Web</p>
+                        </article>
+                      </section>
+                    </div>
+                  }
+                >
+                  <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} />
                   <Tween from={{ opacity: 1 }} to={{ opacity: 0 }} />
                 </Timeline>
               </Timeline>
-            </Timeline>
           </div>
         )}
       </Scene>
