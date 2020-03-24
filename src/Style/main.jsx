@@ -75,10 +75,39 @@ const StyleMain = styled.div`
       h1{font-weight: 200}
     }
     
+    .card{
+  width: 50%;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  opacity: 80%;
+  background-clip: padding-box;
+  border: .01px black solid;
+
+.border {
+    border-bottom: .05px grey solid
+
+}
+  h4{
+    margin: 10px;
+    font-weight: 300
+
+  }
+    .card-content{
+      margin: 20px;
+      display: flex;
+    justify-content: space-around
+
+  }
+      img{
+        width: 100px
+      }
+    }
     .proyect{
-      margin: 100px;
+      margin: 200px;
       display: flex;
       justify-content: space-around
+
     }
     img{
     width: 90%;
