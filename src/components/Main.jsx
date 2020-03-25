@@ -291,7 +291,7 @@ const Main = () => (
     </Controller>
 
     <Controller>
-      <Scene pin={false} reverse={true} duration={500} offset={-300}>
+      <Scene pin={false} reverse={true} duration={1500} offset={-800}>
         <Tween
           wrapper={<div className="section-footer" />}
           staggerFrom={{
@@ -309,23 +309,7 @@ const Main = () => (
           <SplitLetters>
             <h3 className="text">Contacto:</h3>
           </SplitLetters>
-        </Tween>
-      </Scene>
-    </Controller>
-    
-    <Controller>
-      <Scene duration={300} offset={300} pin>
-        <Tween
-          wrapper={<ul className="devs2" />}
-          staggerFrom={{
-            opacity: 0,
-            cycle: {
-              x: i => (i + 1) * 50
-            },
-            ease: Back.easeOut
-          }}
-          stagger={0.1}
-        >
+          <ul>
           <li>
             <p>alejandro.garci.rodr@gmail.com</p>
           </li>
@@ -344,10 +328,10 @@ const Main = () => (
           <li>
             <p>https://www.codewars.com/users/agarci1994</p>
           </li>
+          </ul>
         </Tween>
       </Scene>
     </Controller>
-    <div className="section" />
   </StyleMain>
 );
 

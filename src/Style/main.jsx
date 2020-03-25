@@ -15,6 +15,7 @@ const StyleMain = styled.div`
   .section-header {
     height: 100vh;
     background: linear-gradient(160deg, #ffffff 0%,#c5c5c5 100%);
+  clip-path: polygon(0 7%, 100% 1%, 100% 96%, 0% 100%);
      h1{
          margin: 0;
          padding-top: 200px;
@@ -65,7 +66,17 @@ const StyleMain = styled.div`
     background: linear-gradient(1600deg,#676767 0%,#232323 100%);
     display:flex;
     justify-content: center;
+    align-items: center;
 
+clip-path: polygon(0 7%, 100% 1%, 100% 96%, 0% 100%);
+
+ ul{
+   font-size: 2em;
+   color: white;
+   margin-left: 100px;
+   margin-top:150px;
+   list-style:none;
+ }
     h3{
       margin-top: 200px;
       font-size:4em;
@@ -75,9 +86,11 @@ const StyleMain = styled.div`
   }
   
   .section-main{
-    height: 100vh;
+    height: 120vh;
     background: linear-gradient(130deg, #c5c5c5 0%,#989898 50%, #676767 100%);
     width: 100%;
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 94%);
+    
   
     .main{
       margin-top: 100px;
