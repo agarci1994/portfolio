@@ -128,7 +128,7 @@ const Main = () => (
                   target={
                     <section className="proyect">
                       <article>
-                        <a href="#">
+                        <a href="https://github.com/agarci1994/proyectGame">
                           <img src="../../images/kindoftrippy.png" />
                           <div className="margin">
                           <h2>The King of Trippy</h2>
@@ -143,7 +143,7 @@ const Main = () => (
                         </a>
                       </article>
                       <article>
-                        <a href="#">
+                        <a href="http://elviajero-test.herokuapp.com/">
                           <img src="../../images/elviajero.png" />
                           <div className="margin">
                           <h2>El Viajero</h2>
@@ -157,7 +157,7 @@ const Main = () => (
                         </a>
                       </article>
                       <article>
-                        <a href="#">
+                        <a href="https://github.com/agarci1994/yayos">
                           <img src="../../images/yayosapp.png" />
                           <div className="margin">
                           <h2>Yayos</h2>

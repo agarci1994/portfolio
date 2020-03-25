@@ -200,6 +200,7 @@ visibility:visible
   .margin{
     margin:30px
   }
+  .margin:hover { cursor:pointer;}
   
 
     .heading {
