@@ -10,6 +10,18 @@ const loop = keyframes`
 `;
 
 const StyleMain = styled.div`
+*{
+  font-family: 'Source Code Pro', monospace;
+}
+.position{
+position:absolute; 
+top:400px; 
+left:600px; 
+width:300px; 
+height:300px; 
+visibility:visible 
+}
+
   overflow: hidden;
 
   .section-header {
@@ -17,6 +29,7 @@ const StyleMain = styled.div`
     background: linear-gradient(160deg, #ffffff 0%,#c5c5c5 100%);
   clip-path: polygon(0 7%, 100% 1%, 100% 96%, 0% 100%);
      h1{
+        text-transform: uppercase;
          margin: 0;
          padding-top: 200px;
          font-size: 5em;
@@ -41,10 +54,11 @@ const StyleMain = styled.div`
          box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
      }
      .about{
-       margin-top: 100px;
+       margin-top: 300px;
        font-size: .8em;
      }
      .study {
+       margin-top:200px;
        display: flex;
        article{
          width: 50%;

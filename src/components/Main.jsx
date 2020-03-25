@@ -131,7 +131,7 @@ const Main = () => (
                         <a href="#">
                           <img src="../../images/kindoftrippy.png" />
                           <div className="margin">
-                          <p>The King of Trippy</p>
+                          <h2>The King of Trippy</h2>
                           <p>
                             Pequeño juego de recolección de pistas, con un
                             climax que combina el terror psicológico y los
@@ -146,7 +146,7 @@ const Main = () => (
                         <a href="#">
                           <img src="../../images/elviajero.png" />
                           <div className="margin">
-                          <p>El Viajero</p>
+                          <h2>El Viajero</h2>
                           <p>
                             Web app de viajes que ofrece información básica
                             sobre la ciudad en la que te encuentras y permite la
@@ -160,7 +160,7 @@ const Main = () => (
                         <a href="#">
                           <img src="../../images/yayosapp.png" />
                           <div className="margin">
-                          <p>Yayos</p>
+                          <h2>Yayos</h2>
                           <p>
                             Single-page application que ofrece recursos para
                             facilitar y gestionar las necesidades del día a día
@@ -185,7 +185,6 @@ const Main = () => (
                 <Timeline
                   target={
                     <section className="skill-card">
-                      <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>HTML</h4>
@@ -205,9 +204,6 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
-                      </Tween>
-
-                        <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>CSS</h4>
@@ -231,9 +227,6 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
-                        </Tween>
-
-                          <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>Javascript</h4>
@@ -257,9 +250,6 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
-                          </Tween>
-
-                               <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>Back-end</h4>
@@ -271,13 +261,10 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
-                            </Tween>
-
-                                <Tween from={{ y: 1500 }} to={{ y: 0 }}>
-
                       <div className="card">
                         <div className="border">
                           <h4>Otras</h4>
+                        </div>
                         <div className="card-content">
                           <div className="content">
                             <img src="../../images/github.png" />
@@ -296,10 +283,7 @@ const Main = () => (
                             <p>Final Cut Pro</p>
                           </div>
                         </div>
-                        </div>
-                        </div>
-                      
-                            </Tween>
+                      </div>
                     </section>
                   }
                 >
