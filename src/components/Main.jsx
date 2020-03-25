@@ -1,6 +1,7 @@
 import React from "react";
 import { Controller, Scene } from "react-scrollmagic";
-import { Tween, Timeline } from "react-gsap";
+import { Tween, Timeline, SplitLetters } from "react-gsap";
+import { Back } from "gsap/EasePack";
 import StyleMain from "../Style/main";
 
 const Main = () => (
@@ -180,102 +181,101 @@ const Main = () => (
                     <section className="skill-card">
                       <div className="card">
                         <div className="border">
-
-                        <h4>HTML</h4>
-                        </div>
-                      <div className="card-content">
-                        <div className="content">
-                          <img src="../../images/html5.png"/>
-                          <p>HTML5</p>
-                        </div>
-                        <div className="content">
-                          <img src="../../images/react.png" />
-                          <p>JSX</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/handler.png" />
-                          <p>Handlerbars.js</p>
-                        </div>
-                        </div>
-                      </div>
-                      <div className="card">
-                        <div className="border">
-                        <h4>CSS</h4>
+                          <h4>HTML</h4>
                         </div>
                         <div className="card-content">
-                        <div className="content">
-                            <img src="../../images/css3.png" />
-                          <p>CSS3</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/sass.png" />
-                          <p>SASS</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/materialize.png" />
-                          <p>Materialize</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/materialui.png" />
-                          <p>Material UI</p>
-                        </div>
-                        </div>
-                      </div>
-                      <div className="card">
-                        <div className="border">
-                        <h4>Javascript</h4>
-                        </div>
-                        <div className="card-content">
-                        <div className="content">
+                          <div className="content">
+                            <img src="../../images/html5.png" />
+                            <p>HTML5</p>
+                          </div>
+                          <div className="content">
                             <img src="../../images/react.png" />
-                          <p>React</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/javascript.png" />
-                          <p>ES10</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/jquery.png" />
-                          <p>JQuery</p>
-                        </div>
-                        <div className="content">
-                            <img src="../../images/nodejs.png" />
-                          <p>Node</p>
+                            <p>JSX</p>
+                          </div>
+                          <div className="content">
+                            <img src="../../images/handler.png" />
+                            <p>Handlerbars.js</p>
                           </div>
                         </div>
                       </div>
-                        <div className="card">
-                          <div className="border">
-                          <h4>Back-end</h4>
+                      <div className="card">
+                        <div className="border">
+                          <h4>CSS</h4>
+                        </div>
+                        <div className="card-content">
+                          <div className="content">
+                            <img src="../../images/css3.png" />
+                            <p>CSS3</p>
                           </div>
+                          <div className="content">
+                            <img src="../../images/sass.png" />
+                            <p>SASS</p>
+                          </div>
+                          <div className="content">
+                            <img src="../../images/materialize.png" />
+                            <p>Materialize</p>
+                          </div>
+                          <div className="content">
+                            <img src="../../images/materialui.png" />
+                            <p>Material UI</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card">
+                        <div className="border">
+                          <h4>Javascript</h4>
+                        </div>
+                        <div className="card-content">
+                          <div className="content">
+                            <img src="../../images/react.png" />
+                            <p>React</p>
+                          </div>
+                          <div className="content">
+                            <img src="../../images/javascript.png" />
+                            <p>ES10</p>
+                          </div>
+                          <div className="content">
+                            <img src="../../images/jquery.png" />
+                            <p>JQuery</p>
+                          </div>
+                          <div className="content">
+                            <img src="../../images/nodejs.png" />
+                            <p>Node</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card">
+                        <div className="border">
+                          <h4>Back-end</h4>
+                        </div>
                         <div className="card-content">
                           <div className="content">
                             <img src="../../images/mongodb.png" />
                             <p>MongoDB</p>
                           </div>
-                          </div>
+                        </div>
                       </div>
-                        <div className="card">
+                      <div className="card">
                         <div className="border">
                           <h4>Otras</h4>
-                          </div>
+                        </div>
                         <div className="card-content">
                           <div className="content">
                             <img src="../../images/github.png" />
-                          <p>Github</p>
+                            <p>Github</p>
                           </div>
-                        <div className="content">
+                          <div className="content">
                             <img src="../../images/heroku.png" />
-                          <p>Heroku</p>
-                        </div>
-                        <div className="content">
+                            <p>Heroku</p>
+                          </div>
+                          <div className="content">
                             <img src="../../images/photoshop.png" />
-                          <p>Photoshop</p>
-                        </div>
-                        <div className="content">
+                            <p>Photoshop</p>
+                          </div>
+                          <div className="content">
                             <img src="../../images/fcpx.png" />
-                          <p>Final Cut Pro</p>
-                        </div>
+                            <p>Final Cut Pro</p>
+                          </div>
                         </div>
                       </div>
                     </section>
@@ -289,24 +289,65 @@ const Main = () => (
         )}
       </Scene>
     </Controller>
+
     <Controller>
-      <Scene triggerHook="onLeave" duration={10000} pin>
-        {progress => (
-          <div className="section-footer">
-            <Timeline totalProgress={progress} paused>
-              <Tween from={{ opacity: 0 }} to={{ opacity: 1 }}></Tween>
-      <h3>Contacto:</h3>
-      <p>alejandro.garci.rodr@gmail.com</p>
-      <p>Calle Mohernando, 6, 28038 Madrid, España</p>
-      <p>655215109</p>
-      <p>https://github.com/agarci1994</p>
-      <p>https://www.linkedin.com/in/alexgarciarodriguez/</p>
-      <p>https://www.codewars.com/users/agarci1994</p>
-            </Timeline>
-          </div>
-        )}
+      <Scene pin={false} reverse={true} duration={500} offset={-300}>
+        <Tween
+          wrapper={<div className="section-footer" />}
+          staggerFrom={{
+            left: -2000,
+            rotation: -720,
+            opacity: 0,
+            color: "#ff0000",
+            ease: "Expo.easeOut"
+          }}
+          stagger={0.15}
+          onCompleteAll={() => {
+            console.log("on complete all");
+          }}
+        >
+          <SplitLetters>
+            <h3 className="text">Contacto:</h3>
+          </SplitLetters>
+        </Tween>
       </Scene>
     </Controller>
+    
+    <Controller>
+      <Scene duration={300} offset={300} pin>
+        <Tween
+          wrapper={<ul className="devs2" />}
+          staggerFrom={{
+            opacity: 0,
+            cycle: {
+              x: i => (i + 1) * 50
+            },
+            ease: Back.easeOut
+          }}
+          stagger={0.1}
+        >
+          <li>
+            <p>alejandro.garci.rodr@gmail.com</p>
+          </li>
+          <li>
+            <p>Calle Mohernando, 6, 28038 Madrid, España</p>
+          </li>
+          <li>
+            <p>655215109</p>
+          </li>
+          <li>
+            <p>https://github.com/agarci1994</p>
+          </li>
+          <li>
+            <p>https://www.linkedin.com/in/alexgarciarodriguez/</p>
+          </li>
+          <li>
+            <p>https://www.codewars.com/users/agarci1994</p>
+          </li>
+        </Tween>
+      </Scene>
+    </Controller>
+    <div className="section" />
   </StyleMain>
 );
 

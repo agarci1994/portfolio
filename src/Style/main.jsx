@@ -62,7 +62,16 @@ const StyleMain = styled.div`
   }
   .section-footer {
     height: 100vh;
-    background: linear-gradient(1600deg,#676767 0%,#232323 100%)
+    background: linear-gradient(1600deg,#676767 0%,#232323 100%);
+    display:flex;
+    justify-content: center;
+
+    h3{
+      margin-top: 200px;
+      font-size:4em;
+      color: rgb(245, 245, 245);
+
+    }
   }
   
   .section-main{
@@ -135,6 +144,24 @@ const StyleMain = styled.div`
         margin: 0;
       }
     }
+
+  .section {
+    height: 100vh;
+  }
+
+  .textContainer {
+    position: relative;
+    display: inline-block;
+    transform-origin: center;
+  }
+
+  .text{
+    font-size:5em;
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+    display: inline-block;
+  }
 
   }
 `;
