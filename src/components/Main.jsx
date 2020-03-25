@@ -1,7 +1,6 @@
 import React from "react";
 import { Controller, Scene } from "react-scrollmagic";
-import { Tween, Timeline, SplitLetters } from "react-gsap";
-import { Back } from "gsap/EasePack";
+import { Tween, Timeline } from "react-gsap";
 import StyleMain from "../Style/main";
 
 const Main = () => (
@@ -291,45 +290,34 @@ const Main = () => (
     </Controller>
 
     <Controller>
-      <Scene pin={false} reverse={true} duration={1500} offset={-800}>
-        <Tween
-          wrapper={<div className="section-footer" />}
-          staggerFrom={{
-            left: -2000,
-            rotation: -720,
-            opacity: 0,
-            color: "#ff0000",
-            ease: "Expo.easeOut"
-          }}
-          stagger={0.15}
-          onCompleteAll={() => {
-            console.log("on complete all");
-          }}
-        >
-          <SplitLetters>
+      <Scene triggerHook="onLeave" duration={1000} pin>
+        {progress => 
+        (<div className="section-footer">
+            <Timeline totalProgress={progress} paused>
+              <Tween from={{ y: 1500 }} to={{ y: 0 }}>
             <h3 className="text">Contacto:</h3>
-          </SplitLetters>
+             </Tween>
+              <Tween from={{ y: 1000, x: 1000, rotation: -100 }} to={{ y: 0, x: 0, rotation:0 }}>
           <ul>
           <li>
-            <p>alejandro.garci.rodr@gmail.com</p>
+              <p><a href="mailto::alejandro.garci.rodr@gmail.com"><div className="flex"><img src="../../images/mail.svg" /><p>Email</p></div></a></p>
           </li>
           <li>
-            <p>Calle Mohernando, 6, 28038 Madrid, España</p>
+              <p><a href="tel:+34655215109"><div className="flex"><img src="../../images/tel.svg" /><p>Telefono</p></div></a></p>
           </li>
           <li>
-            <p>655215109</p>
+              <p><a href="https://github.com/agarci1994"><div className="flex"><img src="../../images/github.svg" /><p>Github</p></div></a></p>
           </li>
           <li>
-            <p>https://github.com/agarci1994</p>
+              <p><a href="https://www.linkedin.com/in/alexgarciarodriguez/"><div className="flex"><img src="../../images/linkedin.svg" /><p>Linkedin</p></div></a></p>
           </li>
           <li>
-            <p>https://www.linkedin.com/in/alexgarciarodriguez/</p>
-          </li>
-          <li>
-            <p>https://www.codewars.com/users/agarci1994</p>
+              <p><a href="https://www.codewars.com/users/agarci1994"><div className="flex"><img src="../../images/codewars.svg" className="code" /><p>Codewars</p></div></a></p>
           </li>
           </ul>
-        </Tween>
+              </Tween>
+          </Timeline>
+          </div>)}
       </Scene>
     </Controller>
   </StyleMain>

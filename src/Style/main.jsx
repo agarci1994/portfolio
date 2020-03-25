@@ -68,7 +68,6 @@ const StyleMain = styled.div`
     justify-content: center;
     align-items: center;
 
-clip-path: polygon(0 7%, 100% 1%, 100% 96%, 0% 100%);
 
  ul{
    font-size: 2em;
@@ -83,8 +82,26 @@ clip-path: polygon(0 7%, 100% 1%, 100% 96%, 0% 100%);
       color: rgb(245, 245, 245);
 
     }
+  a{
+    text-decoration:none;
+    color: rgb(245, 245, 245);
+
+    img{ 
+      width: 3%;
+      margin-right: 30px;
+    }
+        .code{
+              width:6%;
+              margin-left: -25px;
+              margin-right: -2px;
+            }
   }
-  
+}
+
+.flex{
+  display: flex;
+}
+
   .section-main{
     height: 120vh;
     background: linear-gradient(130deg, #c5c5c5 0%,#989898 50%, #676767 100%);
