@@ -78,6 +78,7 @@ const StyleMain = styled.div`
  }
     h3{
       margin-top: 200px;
+      margin-left: 300px;
       font-size:4em;
       color: rgb(245, 245, 245);
 
@@ -96,6 +97,20 @@ const StyleMain = styled.div`
               margin-right: -2px;
             }
   }
+
+.end{
+  margin-top:150px;
+  margin-right: 300px;
+  img{
+    margin: 20px;
+    width: 40%;
+  }
+  p{
+    font-size:2em;
+    color:white;
+  }
+}
+
 }
 
 .flex{
@@ -115,6 +130,10 @@ const StyleMain = styled.div`
     }
     
     .card{
+  padding-right:200px;
+  padding-left:200px;
+  padding-top:10px;
+
   width: 50%;
   position: relative;
   margin: auto;
@@ -122,6 +141,7 @@ const StyleMain = styled.div`
   opacity: 80%;
   background-clip: padding-box;
   border: .01px black solid;
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.35);
 
 .border {
     border-bottom: .05px grey solid
@@ -151,13 +171,20 @@ const StyleMain = styled.div`
     width: 90%;
   }
   article{
+    padding-top: 50px;
+    background-color: rgb(245, 245, 245);;
     width: 30%;
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.3);
   }
   a{
     text-decoration: none;
     color: black;
     p {font-size: 2em;
     font-weight: 300}
+  }
+
+  .margin{
+    margin:30px
   }
   
 

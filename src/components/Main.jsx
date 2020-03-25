@@ -130,6 +130,7 @@ const Main = () => (
                       <article>
                         <a href="#">
                           <img src="../../images/kindoftrippy.png" />
+                          <div className="margin">
                           <p>The King of Trippy</p>
                           <p>
                             Pequeño juego de recolección de pistas, con un
@@ -137,11 +138,14 @@ const Main = () => (
                             clásicos de zombis. Desarrollado con Canvas y
                             Vanilla Javascript en la tercera semana de IronHack.
                           </p>
+                          </div>
+
                         </a>
                       </article>
                       <article>
                         <a href="#">
                           <img src="../../images/elviajero.png" />
+                          <div className="margin">
                           <p>El Viajero</p>
                           <p>
                             Web app de viajes que ofrece información básica
@@ -149,11 +153,13 @@ const Main = () => (
                             interacción con otros usuarios. Realizado con
                             Node.js y MoongoDB en la sexta semana de IronHack.
                           </p>
+                           </div>
                         </a>
                       </article>
                       <article>
                         <a href="#">
                           <img src="../../images/yayosapp.png" />
+                          <div className="margin">
                           <p>Yayos</p>
                           <p>
                             Single-page application que ofrece recursos para
@@ -164,6 +170,7 @@ const Main = () => (
                             Style Components, Bootstrap-react, MongoDB, APIs,
                             etc...
                           </p>
+                          </div>
                         </a>
                       </article>
                     </section>
@@ -178,6 +185,7 @@ const Main = () => (
                 <Timeline
                   target={
                     <section className="skill-card">
+                      <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>HTML</h4>
@@ -197,6 +205,9 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
+                      </Tween>
+
+                        <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>CSS</h4>
@@ -220,6 +231,9 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
+                        </Tween>
+
+                          <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>Javascript</h4>
@@ -243,6 +257,9 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
+                          </Tween>
+
+                               <Tween from={{ y: 1500 }} to={{ y: 0 }}>
                       <div className="card">
                         <div className="border">
                           <h4>Back-end</h4>
@@ -254,10 +271,13 @@ const Main = () => (
                           </div>
                         </div>
                       </div>
+                            </Tween>
+
+                                <Tween from={{ y: 1500 }} to={{ y: 0 }}>
+
                       <div className="card">
                         <div className="border">
                           <h4>Otras</h4>
-                        </div>
                         <div className="card-content">
                           <div className="content">
                             <img src="../../images/github.png" />
@@ -276,7 +296,10 @@ const Main = () => (
                             <p>Final Cut Pro</p>
                           </div>
                         </div>
-                      </div>
+                        </div>
+                        </div>
+                      
+                            </Tween>
                     </section>
                   }
                 >
@@ -316,6 +339,11 @@ const Main = () => (
           </li>
           </ul>
               </Tween>
+              <Tween from={{opacity: 0}} to={{opacity: 1}}>
+                <div className="flex end">
+                  <img src="../../images/code.svg" /><p>Happy Code!</p>
+                </div>
+</Tween>
           </Timeline>
           </div>)}
       </Scene>
