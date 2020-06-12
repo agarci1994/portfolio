@@ -9,6 +9,7 @@ const loop = keyframes`
   }
 `;
 
+
 const StyleMain = styled.div`
 *{
   font-family: 'Source Code Pro', monospace;
@@ -25,18 +26,18 @@ visibility:visible
   overflow: hidden;
 
   .section-header {
-    height: 100vh;
+    height: 200vh;
     background: linear-gradient(160deg, #ffffff 0%,#c5c5c5 100%);
   clip-path: polygon(0 7%, 100% 1%, 100% 96%, 0% 100%);
+
      h1{
         text-transform: uppercase;
          margin: 0;
-         padding-top: 200px;
          font-size: 5em;
          font-weight: 200
      }
      h2{
-       margin-top: 100px;
+       margin-top: 50px;
          margin-bottom: 60px;
          font-weight: 300
        }
@@ -54,18 +55,40 @@ visibility:visible
          box-shadow: 2px 2px 21px -14px rgba(0,0,0,0.68);
      }
      .about{
-       margin-top: 300px;
-       font-size: .8em;
+       margin: auto;
+       margin-top: 60px;
+       font-size: .4em;
+       width: 50%;
+
+       p{
+         line-height: 30px;
+       }
      }
+
      .study {
-       margin-top:200px;
+      
+       margin-top:80px;
        display: flex;
        article{
          width: 50%;
        }
       img{
-       width: 30%
-     }}
+       width: 30%;
+     };
+    p{
+      font-size:1em
+    };
+    .bold{
+    font-weight: bold;
+    };
+    a{
+       text-decoration: none;
+       color: black;
+    };
+    .image{
+      height: 170px
+    }
+  }
     
 
   .cursor {
@@ -82,7 +105,6 @@ visibility:visible
     justify-content: center;
     align-items: center;
 
-
  ul{
    font-size: 2em;
    color: white;
@@ -93,7 +115,7 @@ visibility:visible
     h3{
       margin-top: 200px;
       margin-left: 300px;
-      font-size:4em;
+      font-size:2em;
       color: rgb(245, 245, 245);
 
     }
@@ -102,7 +124,7 @@ visibility:visible
     color: rgb(245, 245, 245);
 
     img{ 
-      width: 3%;
+      width: 10%;
       margin-right: 30px;
     }
         .code{
@@ -110,8 +132,10 @@ visibility:visible
               margin-left: -25px;
               margin-right: -2px;
             }
-  }
-
+          }
+      a:hover{
+      color: rgb(255, 135, 135);
+  };
 .end{
   margin-top:150px;
   margin-right: 300px;
@@ -132,7 +156,7 @@ visibility:visible
 }
 
   .section-main{
-    height: 120vh;
+    height: 420vh;
     background: linear-gradient(130deg, #c5c5c5 0%,#989898 50%, #676767 100%);
     width: 100%;
   clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 94%);
@@ -142,7 +166,9 @@ visibility:visible
       margin-top: 100px;
       h1{font-weight: 200}
     }
-    
+    .skill-card{
+      margin-top: 150px;
+    }
     .card{
   padding-right:200px;
   padding-left:200px;
@@ -168,18 +194,50 @@ visibility:visible
     .card-content{
       margin: 20px;
       display: flex;
-    justify-content: space-around
-
+      flex-wrap: wrap;
+    justify-content: space-around;
+.content{
+  margin-bottom: 10px;
+  height: 100%;
+  p{
+    font-size: 1em;
+  }
+};
+div{
+  height: 100px;
+}
   }
       img{
         width: 100px
       }
     }
     .proyect{
-      margin: 200px;
+        flex-wrap: wrap;
+      margin: 50px;
       display: flex;
-      justify-content: space-around
-
+      justify-content: space-around;
+      article{
+        margin-top: 30px;
+      }
+      .text-native{
+        margin-top: 100px;
+      };
+          .image{
+            height: 220px;
+            .imgNative{
+              width: 30%;
+              margin-left: 10px;
+            }
+          }
+          .image2{
+            height: 300px;
+            .gp{
+              width: 80%;
+            }
+          }
+p{
+  font-size: 0.8em
+}
     }
     img{
     width: 90%;
@@ -225,17 +283,71 @@ visibility:visible
     position: relative;
     display: inline-block;
     transform-origin: center;
+    
   }
+}
 
-  .text{
-    font-size:5em;
-    position: relative;
-    font-size: 80px;
-    font-weight: bold;
-    display: inline-block;
-  }
+@media only screen and (max-width: 768px) {
+  .section-header{
+        height: 240vh;
+        .study{
+          .image{
+            height: 70px;
+          };
+          p{font-size: .4em}
 
+        }
+  p{font-size: 1em}
+  .profile{
+  img{
+    width: 50%
+  };
+}
+.about{
+  width: 80%;
+    p{
+      font-size: 2.8em;
+    }
   }
+}
+.section-main{
+  .card{
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0
+  };
+  height: 800vh;
+  .main{
+    h1{
+      margin-top:300px;
+      font-size: 1.5em;
+    }
+  }
+  .proyect{
+    display: inline;
+    article{
+      margin:auto;
+      width: 80%;
+      height: 520px;
+      .text-native{
+margin-top: 0
+      }
+      .image2{
+        height: 200px
+      }
+    }
+  }
+}
+.section-footer{
+flex-direction: column;
+h3{
+  margin-left: 0
+};
+ul{
+  margin-left: 2px
+};
+}
+}
 `;
 
 export default StyleMain;

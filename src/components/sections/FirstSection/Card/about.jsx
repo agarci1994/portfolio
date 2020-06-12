@@ -1,37 +1,19 @@
 import React from "react";
 
 const About = () => (
-            <div className="about">
-                <p>
-                    Nací en Granada (España) y desde muy pequeño fuí un gran
-                    amante de la tecnología y del lenguaje audiovisual.
-                      </p>
-                <p>
-                    Siempre estuve en contacto con la tecnología haciendo
-                    pequeños proyectos personales y aprendiendo de forma
-                    autodidacta.
-                      </p>
-                <p>
-                    Al mismo tiempo comunicación audiovisual y un master en
-                    investigación y creación artistica y realizó varios
-                    largometrajes y cortometrajes
-                      </p>
-                <p>
-                    al mismo tiempo que participo como periodista en
-                    diferentes festivales de cine.
-                      </p>
-                <br></br>
-                <p>
-                    En 2020 decido dar un cambio, sumergiendome
-                    profesionalmente en el desarrollo web, que me abre un
-                    mundo donde seguir desarrollandome,
-                      </p>
-                <p>
-                    explorando nuevas formas de comunicación y superando
-                    retos.
-                      </p>
-            </div>
-)
-
+  <div className="about">
+    <p>
+      Desde muy pequeño fui un gran amante de la tecnología web y del mundo
+      audiovisual. Después de estudiar Comunicación Audiovisual y un master en
+      creación y estudio del arte contemporáneo. En el 2020 me embarco en la
+      experiencia IronHack para desarrollarme como profesional. Las tecnologías
+      de desarrollo me abren un mundo de posibilidades, con las que seguir
+      creando aplicaciones que ayuden a superar nuestras necesidades y la
+      posibilidad de comunicar de formas distintas. Soy una persona creativa y
+      proactiva, me apasiona sumergirme en un proyecto hasta conseguir aportar
+      todo lo posible a su desarrollo.
+    </p>
+  </div>
+);
 
 export default About;

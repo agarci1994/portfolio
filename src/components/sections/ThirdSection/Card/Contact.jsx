@@ -46,7 +46,7 @@ const Contact = () => (
       <p>
         <a href="https://www.codewars.com/users/agarci1994">
           <div className="flex">
-            <img src="../../images/codewars.svg" className="code" />
+            <img src="../../images/codewars.svg"/>
             <p>Codewars</p>
           </div>
         </a>

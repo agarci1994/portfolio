@@ -7,18 +7,24 @@ const Skills = () => (
         <h4>HTML</h4>
       </div>
       <div className="card-content">
-        <div className="content">
-          <img src="../../images/html5.png" />
-          <p>HTML5</p>
-        </div>
-        <div className="content">
-          <img src="../../images/react.png" />
-          <p>JSX</p>
-        </div>
-        <div className="content">
-          <img src="../../images/handler.png" />
-          <p>Handlerbars.js</p>
-        </div>
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML/%C3%8Dndice">
+          <div className="content">
+            <img src="../../images/html5.png" />
+            <p>HTML5</p>
+          </div>
+        </a>
+        <a href="https://es.reactjs.org/docs/introducing-jsx.html">
+          <div className="content">
+            <img src="../../images/react.png" />
+            <p>JSX</p>
+          </div>
+        </a>
+        <a href="https://handlebarsjs.com/">
+          <div className="content">
+            <img src="../../images/handler.png" />
+            <p>Handlerbars.js</p>
+          </div>
+        </a>
       </div>
     </div>
     <div className="card">
@@ -27,20 +33,60 @@ const Skills = () => (
       </div>
       <div className="card-content">
         <div className="content">
-          <img src="../../images/css3.png" />
-          <p>CSS3</p>
+          <a href="https://developer.mozilla.org/es/docs/Web/CSS">
+            <div>
+              <img src="../../images/css3.png" />
+            </div>
+            <p>CSS3</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/sass.png" />
-          <p>SASS</p>
+          <a href="https://sass-lang.com/">
+            <div>
+              <img src="../../images/sass.png" />
+            </div>
+            <p>SASS</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/materialize.png" />
-          <p>Materialize</p>
+          <a href="https://materializecss.com/">
+            <div>
+              <img src="../../images/materialize.png" />
+            </div>
+            <p>Materialize</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/materialui.png" />
-          <p>Material UI</p>
+          <a href="https://material-ui.com/">
+            <div>
+              <img src="../../images/materialui.png" />
+            </div>
+            <p>Material UI</p>
+          </a>
+        </div>
+        <div className="content">
+          <a href="https://styled-components.com/docs/advanced">
+            <div>
+              <img src="../../images/styled-components.png" />
+            </div>
+            <p>Styled Components</p>
+          </a>
+        </div>
+        <div className="content">
+          <a href="https://tailwindcss.com/">
+            <div>
+              <img src="../../images/tailwindcss.png" />
+            </div>
+            <p>Tailwind CSS</p>
+          </a>
+        </div>
+        <div className="content">
+          <a href="https://getbootstrap.com/">
+            <div>
+              <img src="../../images/Bootstrap1.png" />
+            </div>
+            <p>Bootstrap</p>
+          </a>
         </div>
       </div>
     </div>
@@ -50,20 +96,60 @@ const Skills = () => (
       </div>
       <div className="card-content">
         <div className="content">
-          <img src="../../images/react.png" />
-          <p>React</p>
+          <a href="https://es.reactjs.org/">
+            <div>
+              <img src="../../images/react.png" />
+            </div>
+            <p>React</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/javascript.png" />
-          <p>ES10</p>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+            <div>
+              <img src="../../images/javascript.png" />
+            </div>
+            <p>ES10</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/jquery.png" />
-          <p>JQuery</p>
+          <a href="https://jquery.com/">
+            <div>
+              <img src="../../images/jquery.png" />
+            </div>
+            <p>JQuery</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/nodejs.png" />
-          <p>Node</p>
+          <a href="https://nodejs.org/es/">
+            <div>
+              <img src="../../images/nodejs.png" />
+            </div>
+            <p>Node</p>
+          </a>
+        </div>
+      <div className="content">
+          <a href="https://vuejs.org/">
+          <div>
+              <img style={{ marginTop: '30px' }} src="../../images/vue.svg" />
+          </div>
+          <p>VUE</p>
+        </a>
+      </div>
+      <div className="content">
+          <a href="https://reactnative.dev/">
+          <div>
+            <img src="../../images/react-native.png" />
+          </div>
+          <p>React Native</p>
+        </a>
+      </div>
+        <div className="content">
+          <a href="https://es.redux.js.org/">
+            <div>
+              <img src="../../images/redux.jpg" />
+            </div>
+            <p>Redux</p>
+          </a>
         </div>
       </div>
     </div>
@@ -73,8 +159,28 @@ const Skills = () => (
       </div>
       <div className="card-content">
         <div className="content">
-          <img src="../../images/mongodb.png" />
-          <p>MongoDB</p>
+          <a href="https://www.mongodb.com/es">
+            <div>
+              <img src="../../images/mongodb.png" />
+            </div>
+            <p>MongoDB</p>
+          </a>
+        </div>
+        <div className="content">
+          <a href="https://console.cloud.google.com/?hl=es&pli=1">
+            <div>
+              <img style={{ marginTop: '30px' }} src="../../images/gp.png" />
+            </div>
+            <p>GCP</p>
+          </a>
+        </div>
+        <div className="content">
+          <a href="https://firebase.google.com/docs/functions/http-events">
+            <div>
+              <img style={{ marginTop: '30px' }} src="../../images/Firebase.png" />
+            </div>
+            <p>Firebase</p>
+          </a>
         </div>
       </div>
     </div>
@@ -84,20 +190,36 @@ const Skills = () => (
       </div>
       <div className="card-content">
         <div className="content">
-          <img src="../../images/github.png" />
-          <p>Github</p>
+          <a href="https://github.com/">
+            <div>
+              <img src="../../images/github.png" />
+            </div>
+            <p>Github</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/heroku.png" />
-          <p>Heroku</p>
+          <a href="https://www.heroku.com/">
+            <div>
+              <img src="../../images/heroku.png" />
+            </div>
+            <p>Heroku</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/photoshop.png" />
-          <p>Photoshop</p>
+          <a href="https://www.photoshop.com/en">
+            <div>
+              <img src="../../images/photoshop.png" />
+            </div>
+            <p>Photoshop</p>
+          </a>
         </div>
         <div className="content">
-          <img src="../../images/fcpx.png" />
-          <p>Final Cut Pro</p>
+          <a href="https://www.apple.com/es/final-cut-pro/">
+            <div>
+              <img src="../../images/fcpx.png" />
+            </div>
+            <p>Final Cut Pro</p>
+          </a>
         </div>
       </div>
     </div>
