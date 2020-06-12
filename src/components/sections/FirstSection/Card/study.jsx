@@ -2,7 +2,7 @@ import React from "react";
 
 const Study = () => (
   <div>
-    <h2>Estudie:</h2>
+    <h2>Estudié:</h2>
     <section className="study">
       <article>
         <a href="https://www.ucm.es/">
