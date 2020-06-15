@@ -287,9 +287,10 @@ p{
   }
 }
 
+
 @media only screen and (max-width: 768px) {
   .section-header{
-        height: 240vh;
+        height: 360vh;
         .study{
           .image{
             height: 70px;
