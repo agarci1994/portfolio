@@ -86,6 +86,22 @@ const Proyect = () => (
         </div>
       </a>
     </article>
+    <article>
+      <a href="https://github.com/agarci1994/RestaurantApp">
+        <div className="image">
+          <img className="imgNative" src="../../images/restaurant1.png" />
+          <img className="imgNative" src="../../images/restaurant2.png" />
+        </div>
+        <div className="margin text-native">
+          <h2>The Restaurant APP</h2>
+          <p>
+            App movil construida con React Native, se ha utilizado la Babel para los estilos. 
+            App web ha construida con React haciendo uso de Hooks. Para la validación de formularios se ha utilizado Yup y Formik. Para la creación de estilos se ha utilizado TailwindsCSS.
+            La gestion de infraestructuras se ha realizado con Firebase.
+          </p>
+        </div>
+      </a>
+    </article>
   </section>
 );
 
