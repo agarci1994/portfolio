@@ -18,7 +18,7 @@ const Proyect = () => (
       </a>
     </article>
     <article>
-      <a href="http://elviajero-test.herokuapp.com/">
+      <a href="https://github.com/IronSRA/el-viajero">
         <div className="image">
           <img src="../../images/elviajero.png" />
         </div>

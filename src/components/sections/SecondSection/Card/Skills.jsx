@@ -157,27 +157,27 @@ const Skills = () => (
       <div className="border">
         <h4>Back-end</h4>
       </div>
-      <div className="card-content">
+      <div className="card-content" style={{width:'100%'}}>
         <div className="content">
           <a href="https://www.mongodb.com/es">
             <div>
-              <img src="../../images/mongodb.png" />
+              <img style={{ width: '150px' }}  src="../../images/mongodb.png" />
             </div>
             <p>MongoDB</p>
           </a>
         </div>
-        <div className="content">
+        <div style={{ width: '30%' }} className="content">
           <a href="https://console.cloud.google.com/?hl=es&pli=1">
             <div>
-              <img style={{ marginTop: '30px' }} src="../../images/gp.png" />
+              <img style={{ marginTop: '30px', width: '150px'}} src="../../images/gp.png" />
             </div>
             <p>GCP</p>
           </a>
         </div>
-        <div className="content">
+        <div style={{ width: '30%' }} className="content">
           <a href="https://firebase.google.com/docs/functions/http-events">
             <div>
-              <img style={{ marginTop: '30px' }} src="../../images/Firebase.png" />
+              <img style={{ marginTop: '30px', width: '150px'}} src="../../images/Firebase.png" />
             </div>
             <p>Firebase</p>
           </a>

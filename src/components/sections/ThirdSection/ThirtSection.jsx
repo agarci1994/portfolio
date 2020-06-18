@@ -7,7 +7,7 @@ import End from "./Card/End";
 
 const ThirtSection = () => (
   <Controller>
-    <Scene triggerHook="onLeave" duration={1000} pin>
+    <Scene triggerHook="onLeave" duration={999} pin>
       {progress => (
         <div className="section-footer">
           <Timeline totalProgress={progress} paused>
