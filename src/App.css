@@ -24,6 +24,26 @@
   color: white;
 }
 
+.download{
+background-color: rgb(27, 27, 27);
+opacity: 70%;
+position: fixed;
+z-index: 66666;
+margin: 20px;
+padding: 30px;
+border-radius: 8%;
+}
+
+.download:hover{
+  padding: 35px
+}
+
+.link-download{
+text-decoration: none;
+color: white
+}
+
+
 .App-link {
   color: #61dafb;
 }
